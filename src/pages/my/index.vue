@@ -1,12 +1,20 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useCounterStore } from '@/stores/counter'
 
-const title = ref('my')
+const counterStore = useCounterStore()
 </script>
 
 <template>
   <view class="content">
-    {{ title }}
+    <view>{{ counterStore.count }}</view>
+    <view>
+      <button @click="counterStore.decrement()">
+        -
+      </button>
+      <button @click="counterStore.increment()">
+        +
+      </button>
+    </view>
   </view>
 </template>
 

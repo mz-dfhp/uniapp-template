@@ -1,8 +1,8 @@
 {
   "name": "uni-preset-vue",
-  "type": "module",
   "version": "0.0.0",
   "scripts": {
+    "dev": "pnpm run dev:mp-weixin",
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",
@@ -57,6 +57,8 @@
     "@dcloudio/uni-mp-toutiao": "3.0.0-3081220230817001",
     "@dcloudio/uni-mp-weixin": "3.0.0-3081220230817001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-3081220230817001",
+    "pinia": "^2.0.33",
+    "pinia-plugin-persistedstate": "^3.2.1",
     "vue": "^3.2.45",
     "vue-i18n": "^9.1.9"
   },
