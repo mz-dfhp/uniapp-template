@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import AppWrapper from '@/components/AppWrapper/index.vue'
+import PageWrapper from '@/components/PageWrapper/index.vue'
+import Tabbar from '@/components/Tabbar/index.vue'
 
 const title = ref('index')
 </script>
 
 <template>
-  <AppWrapper>
+  <PageWrapper>
     <view>
       {{ title }}
+      <Tabbar />
     </view>
-  </AppWrapper>
+  </PageWrapper>
 </template>
 
 <style scoped lang="scss"></style>

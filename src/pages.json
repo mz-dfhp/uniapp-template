@@ -7,6 +7,12 @@
       }
     },
     {
+      "path": "pages/classify/index",
+      "style": {
+        "navigationBarTitleText": "分类"
+      }
+    },
+    {
       "path": "pages/my/index",
       "style": {
         "navigationBarTitleText": "我的"
@@ -14,15 +20,16 @@
     }
   ],
   "tabBar": {
-    "custom": false,
+    "custom": true,
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页"
+        "pagePath": "pages/index/index"
       },
       {
-        "pagePath": "pages/my/index",
-        "text": "我的"
+        "pagePath": "pages/classify/index"
+      },
+      {
+        "pagePath": "pages/my/index"
       }
     ]
   },

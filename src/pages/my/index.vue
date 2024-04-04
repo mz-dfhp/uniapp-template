@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { useCounterStore } from '@/stores/counter'
-import AppWrapper from '@/components/AppWrapper/index.vue'
+import PageWrapper from '@/components/PageWrapper/index.vue'
 
 const counterStore = useCounterStore()
 </script>
 
 <template>
-  <AppWrapper>
+  <PageWrapper>
     <view>
       <view>{{ counterStore.count }}</view>
       <view>
@@ -18,7 +18,7 @@ const counterStore = useCounterStore()
         </button>
       </view>
     </view>
-  </AppWrapper>
+  </PageWrapper>
 </template>
 
 <style scoped lang="scss"></style>
