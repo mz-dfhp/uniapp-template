@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import PageWrapper from '@/components/PageWrapper/index.vue'
 import Tabbar from '@/components/Tabbar/index.vue'
 
-const title = ref('index')
+const title = ref('首页')
 </script>
 
 <template>

@@ -37,8 +37,10 @@ function onChange(item: typeof list[number]) {
     <view class="tabbar-wrapper">
       <view class="tabbar-list">
         <view v-for="(item) in list" :key="item.path" class="tabbar-list-item" @click="onChange(item)">
-          <view>{{ item.title }}</view>
-          <view>{{ item.title }}</view>
+          <view class="list-item-title">
+            {{ item.title }}
+          </view>
+          <view class="list-item-icon" />
         </view>
       </view>
       <SafeArea />
@@ -63,6 +65,17 @@ function onChange(item: typeof list[number]) {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      .list-item-title {
+        color: darkmagenta;
+      }
+
+      .list-item-icon {
+        margin-top: 2px;
+        width: 25px;
+        height: 25px;
+        background: #ccc;
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useCounterStore } from '@/stores/counter'
 import PageWrapper from '@/components/PageWrapper/index.vue'
+import Tabbar from '@/components/Tabbar/index.vue'
 
 const counterStore = useCounterStore()
 </script>
@@ -17,6 +18,7 @@ const counterStore = useCounterStore()
           +
         </button>
       </view>
+      <Tabbar />
     </view>
   </PageWrapper>
 </template>
