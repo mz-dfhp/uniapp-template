@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = withDefaults(defineProps<{ position: 'top' | 'bottom' }>(), {
+const props = withDefaults(defineProps<{ position?: 'top' | 'bottom' }>(), {
   position: 'bottom',
 })
 </script>
