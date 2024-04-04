@@ -121,9 +121,6 @@ onMounted(() => {
         .list-item-title{
           color: #1578ff;
         }
-        .list-item-icon{
-          color: #1578ff;
-        }
       }
     }
   }
